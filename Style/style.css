@@ -1,0 +1,373 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: none;   /*Se eliminan bordes de página */ 
+    
+}
+
+header{
+    position: relative;
+}
+
+.encabezado{    
+    background-image: url(https://images.pexels.com/photos/1146708/pexels-photo-1146708.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    height: 280px;
+    border: 0;
+    margin: 0;
+    padding: 0; 
+}
+.encabezado::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54, 52, 52, 0.388); /* Fondo blanco con opacidad */
+}
+
+.imagenEncabezado img{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+.imagenEncabezado{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.contenidoCentral{
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.contenidoCentral h1{
+    margin: 0;
+  font-size: 5rem;
+  font-family: 'Montserrat', 'Playfair Display', monospace, sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
+  letter-spacing: 10px;
+  
+}
+.contenidoCentral a{
+    text-decoration: none;
+}
+
+.contenedorInput{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    margin-top: 15px;
+}
+
+.contenedorInput input{
+    width: 100%;
+    padding:10px 40px 10px 20px ;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.contenedorInput i {
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 1rem;
+  pointer-events: none; /* permite hacer clic en el input sin problemas */
+}
+.iconosHeader{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.iconosHeader a{
+    color: #000;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.iconosHeader a:hover{
+    color: #000;
+    text-shadow:0 2px 5px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+.imagen_intermedio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    
+}
+.btn-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 28px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 55px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Cuerpo {
+    display: flex;
+    background-color:rgb(255, 255, 255);
+    padding: 0.3125rem 1.875rem 0.3125rem;	
+    height: 100%;
+    flex-flow: column wrap;
+    max-width: 99%;
+    max-height: 99%;
+    justify-content: center;
+    align-items: center;
+}
+.TituloCuerpo{
+    flex: 1 1 99%;
+    justify-content: center;
+}
+.TituloCuerpo h2{
+    font-size: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color: #000;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ConteMasVend{
+    flex: 1 1 99%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    flex-direction: row;
+    box-sizing: border-box;
+    background-color:rgb(255, 255, 255);
+}
+.ProMaVe1{
+    flex: 1 1 22%;
+    box-sizing: border-box;
+    /* border: solid; */
+
+}
+.ProMaVe2{
+    flex: 1 1 22%;
+    flex-basis: 22%;
+    box-sizing: border-box;
+    /* border: solid; */
+}
+.ProMaVe3{
+    flex: 1 1 22%;
+    flex-basis: 22%;
+    box-sizing: border-box;
+    /* border: solid; */
+}
+.ProMaVe4{
+    flex: 1 1 22%;
+    flex-basis: 22%;
+    box-sizing: border-box;
+    /* border: solid; */
+}
+.EsBt1{
+    flex: 1 1 6%;
+    box-sizing: border-box;
+    /* border: solid; */
+
+}
+.EsBt2{
+    flex: 1 1 6%;
+    box-sizing: border-box;
+    /* border: solid; */
+
+}
+.ProduMasVend{
+    flex: 1 1 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    /* max-width: 20rem;
+    width: 100%;
+    max-height: 32rem; 
+    height: 100%; */
+    background-color:#ffffff;
+    padding: 0.3125rem;
+    margin-right: 0.3125rem;
+    /*position: static;*/   
+    /*grid-template-rows:79% 5% 5% 4% 7%;*/
+    /* border: solid; */
+}
+.img_productos {
+    align-items: stretch;
+    justify-content: center;
+    background: #000;
+    /*border: solid;*/
+    flex-basis: 79%;
+    order:1;
+    
+}
+.img_productos img{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 5/7;
+} 
+.NombreProductoArt{
+    align-items: center;
+    max-width:  20vw;
+    width: auto;
+    /* border: solid; */
+    flex-basis: 5%;
+    order:2;
+}
+.NombreProducto{
+    font-size: 100%;
+    font-family: Lucida;
+    color: #000;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* border: solid; */
+}
+.PrecioArt{
+    align-items: center;
+    max-width:  20vw;
+    width: auto;
+    /* border: solid; */
+    flex-basis: 5%;
+    order:3;
+}
+.NombrePrecio{
+    font-size: 100%;
+    font-family: Lucida;
+    color: #000;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* border: solid; */
+}
+.ColorArt{
+    width:  100%;
+    place-items: center;
+    align-items: center;
+    /* border: solid; */
+    flex-basis: 4%;
+    order:4;
+}
+.ListaColor{
+    display:flex;
+    flex-flow: row wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.ListaColor li {
+    justify-content: center; 
+    display: flex;
+    margin-right: 5px;
+}
+.ListaColor li img{
+    max-width: 0.9rem;
+    max-height: 0.9rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ListaColor li img:hover{
+    transform: scale(1.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.CompraArt{
+    justify-content: center; 
+    align-items: center;
+    flex: 1 1 auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* border: solid; */
+    order:5;
+}
+.CompraButton{
+    justify-content: center; 
+    align-items: center;
+    padding:0;
+    border: none;
+    background-color: #ecc4fd;
+    cursor: pointer;
+    font-size: auto;
+    font-family: Lucida;
+    color: #000;
+    transition: background-color 0.4s;
+    width: 100%;
+}
+.CompraButton:hover {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: #1a1a1a solid;
+  transform: scaleY(1.1);
+  
+}
+/*
+.CompraButton.active {
+  background-color: #4CAF50;
+  color: white;
+} */
+
+.EspaButto{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    background-color:#ffffff;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+.Botton{
+    height: 90%;
+    cursor: pointer;
+    font-size: auto;
+    font-family: Lucida;
+    color: #ffffff;
+    border: none;
+    background-color: #ffffff;
+    transition: background-color 0.4s;
+    
+}
+.Botton:hover {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: #1a1a1a solid;
+  transform: scaleY(1.1);
+}
+
