@@ -9,6 +9,34 @@ header{
     position: relative;
 }
 
+.cuadros_dinamicos{
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista_cuadros{
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    padding: 0;
+    margin: 30px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cuadrado{
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.cuadrado li{
+
+}
 
 .btn-whatsapp {
   position: fixed;
