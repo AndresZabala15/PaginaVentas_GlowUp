@@ -208,20 +208,34 @@ button.SliBottonPrev, button.SliBottonNext {
 /*CUerpo lo mas vendido */ 
 .Cuerpo {
     display: flex;
+    Position: relative;
     background-color:rgb(255, 255, 255);
     padding: 0.3125rem 1.875rem 0.3125rem;	
-    height: 100%;
-    flex-flow: column wrap;
+    max-height: 100%;
+    flex-flow: column ;
     max-width: 99%;
-    max-height: 99%;
     justify-content: center;
     align-items: center;
 }
+.CuerpoInferior{
+    display: flex;
+    Position: relative;
+    background-color:rgb(255, 255, 255);
+    padding: 0.3125rem 1.875rem 0.3125rem;	
+    flex-flow: row wrap;
+    height: 100%;
+    max-width: 99%;
+    align-items: flex-start;
+}
 .TituloCuerpo{
+    position: relative;
     flex: 1 1 99%;
+    height: 100%;
+    display: flex;
     justify-content: center;
 }
 .TituloCuerpo h2{
+    position: relative;
     font-size: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     color: #000;
@@ -231,49 +245,81 @@ button.SliBottonPrev, button.SliBottonNext {
     text-overflow: ellipsis;
 }
 .ConteMasVend{
+    position: relative;
+    height: 100%;
+    width: 100%;
     flex: 1 1 99%;
     display: flex;
     justify-content: center;
-    padding: 5px;
     flex-direction: row;
     box-sizing: border-box;
     background-color:rgb(255, 255, 255);
+    min-height: 25rem;
 }
+.ConteProduNue{
+    position: relative;
+    display: flex;
+    height: 100%;
+    max-width:100% ;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    
+}
+.ProduMasNuevo{
+    padding: 0.3125rem;
+    flex: 1 1 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    width: 22%;
+    background-color:#ffffff;
+    margin: 0.3125rem;
+}
+
 .ProMaVe1{
+    position: relative;
     flex: 1 1 22%;
     box-sizing: border-box;
+    margin-left: 0.3125rem;
     /* border: solid; */
 
 }
 .ProMaVe2{
+    position: relative;
     flex: 1 1 22%;
     flex-basis: 22%;
     box-sizing: border-box;
     /* border: solid; */
 }
 .ProMaVe3{
+    position: relative;
     flex: 1 1 22%;
     flex-basis: 22%;
     box-sizing: border-box;
     /* border: solid; */
 }
 .ProMaVe4{
+    position: relative;
     flex: 1 1 22%;
     flex-basis: 22%;
     box-sizing: border-box;
     /* border: solid; */
 }
 .EsBt1{
+    position: relative;
     flex: 1 1 6%;
     box-sizing: border-box;
     /* border: solid; */
+    width: 6%;
 
 }
 .EsBt2{
+    position: relative;
     flex: 1 1 6%;
     box-sizing: border-box;
     /* border: solid; */
-
+    width: 6%;
 }
 .ProduMasVend{
     flex: 1 1 100%;
@@ -282,14 +328,14 @@ button.SliBottonPrev, button.SliBottonNext {
     justify-content: flex-start;
     /* max-width: 20rem;
     width: 100%;
-    max-height: 32rem; 
-    height: 100%; */
+    max-height: 32rem;  */
+    width: 22%;
     background-color:#ffffff;
-    padding: 0.3125rem;
     margin-right: 0.3125rem;
     /*position: static;*/   
     /*grid-template-rows:79% 5% 5% 4% 7%;*/
     /* border: solid; */
+    
 }
 .img_productos {
     align-items: stretch;
@@ -309,13 +355,13 @@ button.SliBottonPrev, button.SliBottonNext {
 } 
 .NombreProductoArt{
     align-items: center;
-    max-width:  20vw;
-    width: auto;
+    width: 100%;
     /* border: solid; */
     flex-basis: 5%;
     order:2;
 }
 .NombreProducto{
+    width: 100%;
     font-size: 100%;
     font-family: Lucida;
     color: #000;
@@ -327,14 +373,14 @@ button.SliBottonPrev, button.SliBottonNext {
 }
 .PrecioArt{
     align-items: center;
-    max-width:  20vw;
-    width: auto;
+    width: 100%;
     /* border: solid; */
     flex-basis: 5%;
     order:3;
 }
 .NombrePrecio{
     font-size: 100%;
+    width: 100%;
     font-family: Lucida;
     color: #000;
     text-transform: uppercase;
@@ -388,13 +434,18 @@ button.SliBottonPrev, button.SliBottonNext {
     order:5;
 }
 .CompraButton{
+ 
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     justify-content: center; 
     align-items: center;
     padding:0;
     border: none;
     background-color: #ecc4fd;
     cursor: pointer;
-    font-size: auto;
+    font-size: 1vh 1vw;
     font-family: Lucida;
     color: #000;
     transition: background-color 0.4s;
@@ -414,6 +465,7 @@ button.SliBottonPrev, button.SliBottonNext {
 } */
 
 .EspaButto{
+    
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
@@ -432,11 +484,83 @@ button.SliBottonPrev, button.SliBottonNext {
     border: none;
     background-color: #ffffff;
     transition: background-color 0.4s;
-    
+    width: 100%;
+}
+.Botton i{
+    width: 100%;
+    color: #929593;
 }
 .Botton:hover {
-  background-color: #1a1a1a;
-  color: #ffffff;
-  border: #1a1a1a solid;
-  transform: scaleY(1.1);
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: #1a1a1a solid;
+    transform: scaleY(1.1);
+}
+
+/* Banner pequeño */
+.BannerPequeño {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 5rem; 
+    max-height: 20rem;/* Ajusta la altura según sea necesario */
+    background-color: #fd0000; /* Color de fondo opcional */
+    margin:0.3125rem 0 0.3125rem;	
+}
+
+.BannerCatalogo {
+    display: flex;
+    position: relative;
+    background-image: url(https://upload.hkgolden.media/comment/wpr4sdw5.nrp3h42lyk3.bggi220kgw3.owd.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:100%;
+    position: relative;
+    max-width:100%;
+    height: 31.25rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.ContenedorBannerCatalogo{
+    flex: 1 1 auto;
+    position: relative;  
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width:25rem;
+    height: 20%;
+
+}
+.CatalogoButton{
+ 
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    justify-content: center; 
+    align-items: center;
+    padding:0;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 150%;
+    font-family: Lucida;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    transition:all 0.9s;
+    opacity:0.3;
+}
+.CatalogoButton:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: #1a1a1a solid;
+    transform: scale(2.6);
+    opacity:1;
+    
+  
 }
