@@ -101,7 +101,7 @@ a img{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-SliderPromoConte {
+.SliderPromoConte {
     display: flex;
     position: relative;
     background-color:rgb(255, 255, 255);
@@ -157,20 +157,24 @@ button.SliBottonPrev, button.SliBottonNext {
 /*CUerpo lo mas vendido */ 
 .Cuerpo {
     display: flex;
+    Position: relative;
     background-color:rgb(255, 255, 255);
     padding: 0.3125rem 1.875rem 0.3125rem;	
-    height: 100%;
+    max-height: 100%;
     flex-flow: column wrap;
     max-width: 99%;
-    max-height: 99%;
     justify-content: center;
     align-items: center;
 }
 .TituloCuerpo{
+    position: relative;
     flex: 1 1 99%;
+    height: 100%;
+    display: flex;
     justify-content: center;
 }
 .TituloCuerpo h2{
+    position: relative;
     font-size: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     color: #000;
@@ -180,49 +184,59 @@ button.SliBottonPrev, button.SliBottonNext {
     text-overflow: ellipsis;
 }
 .ConteMasVend{
+    position: relative;
+    height: 100%;
+    width: 100%;
     flex: 1 1 99%;
     display: flex;
     justify-content: center;
-    padding: 5px;
     flex-direction: row;
     box-sizing: border-box;
     background-color:rgb(255, 255, 255);
 }
 .ProMaVe1{
+    position: relative;
     flex: 1 1 22%;
     box-sizing: border-box;
+    margin-left: 0.3125rem;
     /* border: solid; */
 
 }
 .ProMaVe2{
+    position: relative;
     flex: 1 1 22%;
     flex-basis: 22%;
     box-sizing: border-box;
     /* border: solid; */
 }
 .ProMaVe3{
+    position: relative;
     flex: 1 1 22%;
     flex-basis: 22%;
     box-sizing: border-box;
     /* border: solid; */
 }
 .ProMaVe4{
+    position: relative;
     flex: 1 1 22%;
     flex-basis: 22%;
     box-sizing: border-box;
     /* border: solid; */
 }
 .EsBt1{
+    position: relative;
     flex: 1 1 6%;
     box-sizing: border-box;
     /* border: solid; */
+    width: 6%;
 
 }
 .EsBt2{
+    position: relative;
     flex: 1 1 6%;
     box-sizing: border-box;
     /* border: solid; */
-
+    width: 6%;
 }
 .ProduMasVend{
     flex: 1 1 100%;
@@ -231,14 +245,14 @@ button.SliBottonPrev, button.SliBottonNext {
     justify-content: flex-start;
     /* max-width: 20rem;
     width: 100%;
-    max-height: 32rem; 
-    height: 100%; */
+    max-height: 32rem;  */
+    width: 22%;
     background-color:#ffffff;
-    padding: 0.3125rem;
     margin-right: 0.3125rem;
     /*position: static;*/   
     /*grid-template-rows:79% 5% 5% 4% 7%;*/
     /* border: solid; */
+    
 }
 .img_productos {
     align-items: stretch;
@@ -337,13 +351,18 @@ button.SliBottonPrev, button.SliBottonNext {
     order:5;
 }
 .CompraButton{
+ 
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     justify-content: center; 
     align-items: center;
     padding:0;
     border: none;
     background-color: #ecc4fd;
     cursor: pointer;
-    font-size: auto;
+    font-size: 1vh 1vw;
     font-family: Lucida;
     color: #000;
     transition: background-color 0.4s;
@@ -363,6 +382,7 @@ button.SliBottonPrev, button.SliBottonNext {
 } */
 
 .EspaButto{
+    
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
@@ -381,11 +401,15 @@ button.SliBottonPrev, button.SliBottonNext {
     border: none;
     background-color: #ffffff;
     transition: background-color 0.4s;
-    
+    width: 100%;
+}
+.Botton i{
+    width: 100%;
+    color: #929593;
 }
 .Botton:hover {
-  background-color: #1a1a1a;
-  color: #ffffff;
-  border: #1a1a1a solid;
-  transform: scaleY(1.1);
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: #1a1a1a solid;
+    transform: scaleY(1.1);
 }
