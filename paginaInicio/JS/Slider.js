@@ -19,3 +19,6 @@ nextBtn.addEventListener('click', () => showSlide(index + 1));
   }, 5000); // Cambia cada 5 segundos 1000 = 1 sg
 
   console.log(slides.length);
+
+
+  
