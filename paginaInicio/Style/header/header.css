@@ -69,13 +69,13 @@
 .contenedorInput{
     position: relative;
     display: inline-block;
-    width: 100%;
+    width: 80%;
     margin-top: 0.9375rem;
 }
 
 .contenedorInput input{
     width: 100%;
-    padding: 1% 2% 1% 10%;
+    padding: 1% 2% 1% 1.625rem;
     font-size: 1rem;
     border-radius: 0.625rem;
     border: none;
@@ -84,7 +84,7 @@
 }
 .contenedorInput i {
   position: absolute;
-  right: 2%;
+  right: 1%;
   top: 50%;
   transform: translateY(-50%);
   color: #888;
