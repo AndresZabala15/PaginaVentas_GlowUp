@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3656259091178158"
+     crossorigin="anonymous"></script>
     <title>Glow Up</title>
     <link rel="stylesheet" href="./paginaInicio/Style/body/style.css">
     <link rel="stylesheet" href="./paginaInicio/Style/header/header.css">
@@ -31,7 +33,7 @@
         
         <div class="iconosHeader">
   <a href="https://www.instagram.com/glowupbbc/" target="_blank" ><i class="fab fa-instagram"></i></a>
-  <a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+  <a href="#" target="_blank" id="idModal_mapa"><i class="fas fa-map-marker-alt"></i></a>
   <a href="#" id="abrirModal"><i class="fas fa-envelope"></i></a>
   <a href="#" target="_blank"><i class="fas fa-shopping-cart"></i></a>
 </div>
@@ -48,6 +50,16 @@
             <textarea name="mensaje" id="mensaje" rows="4" required></textarea>
             <button type="submit">Enviar</button>
          </form>
+      </div>
+   </div>
+   <div id="modal_mapa" class="modal_contacto">
+      <div class="contenido_modal">
+         <span class="cerrar" id="cerrarModal_mapa">&times;</span>
+         <h2>Encuentranos en</h2>
+         <div class="modal_mapa_padre">
+            <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4167986173356!2d-74.04737032416338!3d4.697424041684215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab0f50a02a3%3A0x83c542f2679a09f1!2zQWMgMTE2ICMxMTViODAsIFVzYXF1w6luLCBCb2dvdMOh!5e0!3m2!1ses-419!2sco!4v1752293459329!5m2!1ses-419!2sco"  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         </div>
       </div>
    </div>
     </header>
@@ -426,11 +438,23 @@
                
                <div class="iconosfooter">
   <a href="https://www.instagram.com/glowupbbc/" target="_blank" ><i class="fab fa-instagram" class="boton_instagram"></i></a>
-   <a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+   <a href="#"  id="idModal_mapa_footer"><i class="fas fa-map-marker-alt"></i></a>
   <a href="pagina contactanos/contactanos.html" target="_blank"><i class="fas fa-envelope" ></i></a>
 </div>      
+
+<div id="modal_mapa" class="modal_contacto">
+      <div class="contenido_modal">
+         <span class="cerrar" id="cerrarModal_mapa">&times;</span>
+         <h2>Encuentranos en</h2>
+         <div class="modal_mapa_padre">
+            <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4167986173356!2d-74.04737032416338!3d4.697424041684215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab0f50a02a3%3A0x83c542f2679a09f1!2zQWMgMTE2ICMxMTViODAsIFVzYXF1w6luLCBCb2dvdMOh!5e0!3m2!1ses-419!2sco!4v1752293459329!5m2!1ses-419!2sco"  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         </div>
+      </div>
+   </div>
          </div>
 
     <script src="paginaInicio/JS/Slider.js"></script>
+    
 </body>
 </html>

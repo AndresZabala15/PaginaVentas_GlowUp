@@ -35,3 +35,39 @@ nextBtn.addEventListener('click', () => showSlide(index + 1));
       document.getElementById(`pestaña_modal_contacto`).style.display = `none`
     }
   }
+
+  //funcion abrir modal mapa
+
+  document.getElementById(`idModal_mapa`).onclick = function(e){
+    e.preventDefault();
+    document.getElementById(`modal_mapa`).style.display = `block`;
+  }
+
+  document.getElementById(`cerrarModal_mapa`).onclick = function(){
+    document.getElementById(`modal_mapa`).style.display = `none`;
+  }
+
+window.addEventListener('click', function(event) {
+  const modal = document.getElementById('modal_mapa');
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
+//funcion abrir modal mapa footer
+
+  document.getElementById(`idModal_mapa_footer`).onclick = function(e){
+    e.preventDefault();
+    document.getElementById(`modal_mapa`).style.display = `block`;
+  }
+
+  document.getElementById(`cerrarModal_mapa`).onclick = function(){
+    document.getElementById(`modal_mapa`).style.display = `none`;
+  }
+
+window.addEventListener('click', function(event) {
+  const modal = document.getElementById('modal_mapa');
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+  });
