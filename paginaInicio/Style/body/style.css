@@ -10,24 +10,32 @@ header{
 
 .cuadros_dinamicos{
     display: flex;
-    height: 500px;
+    Position: relative;
+    background-color:rgb(255, 255, 255);
+    padding: 1.875rem 1.875rem 1.875rem;	
+    flex-flow: row wrap;
+    max-width: 99%;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 55px;
+    gap: 3.4375rem;
     width: 100%;
-    padding: 20px;
+    padding: 1.25rem;
     margin: 0 auto;
+    flex-flow: row wrap;
 
 }
 
 .box{
     position: relative;
-    width: 200px;
-    height: 270px;
+    width: 11.5rem;
+    height: 16.875rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,11 +127,11 @@ a img{
 .contenido_modal input,
 .contenido_modal textarea{
     width: 80%;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+    margin-top: 0.3125rem;
+    margin-bottom: 0.625rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.0625rem  solid #ccc;
 }
 
 .contenido_modal button{
@@ -268,15 +276,17 @@ button.SliBottonPrev, button.SliBottonNext {
     
 }
 .ProduMasNuevo{
+    position: relative;
     padding: 0.3125rem;
     flex: 1 1 1;
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
-    width: 22%;
+    width: 15.5rem;
     background-color:#ffffff;
     margin: 0.3125rem;
 }
+
 
 .ProMaVe1{
     position: relative;
@@ -323,21 +333,17 @@ button.SliBottonPrev, button.SliBottonNext {
     width: 6%;
 }
 .ProduMasVend{
+    position: relative;
     flex: 1 1 100%;
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
-    /* max-width: 20rem;
-    width: 100%;
-    max-height: 32rem;  */
     width: 22%;
     background-color:#ffffff;
     margin-right: 0.3125rem;
-    /*position: static;*/   
-    /*grid-template-rows:79% 5% 5% 4% 7%;*/
-    /* border: solid; */
-    
+
 }
+
 .img_productos {
     align-items: stretch;
     justify-content: center;

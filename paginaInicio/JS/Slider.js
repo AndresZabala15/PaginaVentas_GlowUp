@@ -35,3 +35,4 @@ nextBtn.addEventListener('click', () => showSlide(index + 1));
       document.getElementById(`pestaña_modal_contacto`).style.display = `none`
     }
   }
+

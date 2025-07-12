@@ -8,10 +8,13 @@
     background-repeat: no-repeat;
     width: 100%;
     position: relative;
-    height: 280px;
+    height: 17.5rem;
     border: 0;
     margin: 0;
     padding: 0; 
+    display: flex;
+    place-content: center;
+    align-items: center;
 }
 .encabezado::before{
     content: '';
@@ -24,37 +27,39 @@
 }
 
 .imagenEncabezado img{
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
 }
 
 .imagenEncabezado{
     position: absolute;
-    left: 20px;
-    top: 50%;
+    left: 1.25rem;
+    width:auto;
+    height:50%;
+    bottom:50% ;
+    top: 30%;
     transform: translateY(-50%);
-    
+
 }
 .contenidoCentral{
-display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+    text-align: center;
+    max-width: 50%;
+
 }
 .contenidoCentral h1{
     margin: 0;
-  font-size: 5rem;
-  font-family: 'Montserrat', 'Playfair Display', monospace, sans-serif;
-  color: #000;
-  text-transform: uppercase;
-  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
-  letter-spacing: 10px;
+    font-size: auto;
+    font-family: 'Montserrat', 'Playfair Display', monospace, sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    text-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.7);
+    letter-spacing: 0.625rem;
   
 }
 .contenidoCentral a{
@@ -64,21 +69,21 @@ display: flex;
 .contenedorInput{
     position: relative;
     display: inline-block;
-    width: 300px;
-    margin-top: 15px;
+    width: 80%;
+    margin-top: 0.9375rem;
 }
 
 .contenedorInput input{
-    width: 100%;
-    padding:10px 40px 10px 20px ;
+    width: 80%;
+    padding: 4% 6% 4%;
     font-size: 1rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     border: none;
     outline: none;
 }
 .contenedorInput i {
   position: absolute;
-  right: -10px;
+  right: 1.525rem;
   top: 50%;
   transform: translateY(-50%);
   color: #888;
