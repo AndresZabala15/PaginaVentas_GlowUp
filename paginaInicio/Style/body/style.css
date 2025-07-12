@@ -278,7 +278,7 @@ button.SliBottonPrev, button.SliBottonNext {
 .ProduMasNuevo{
     position: relative;
     padding: 0.3125rem;
-    flex: 1 1 1;
+    flex: 1 0 1;
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
