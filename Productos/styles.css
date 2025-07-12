@@ -11,5 +11,173 @@ body{
 .contenedor{
     display:flex;
     align-items: flex-start;
-    justify-content: sp;
+    justify-content: space-between;
+}
+.barra{
+    width: 25%;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    height: 92vh;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+.data{
+    width: 73%;
+    border-radius: 10px;
+    height: 92vh;
+    overflow-y: auto;
+}
+.fa-circle{
+    color: aqua;
+}
+.barraBusqueda{
+    width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+}
+input{
+    width: 90%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.glass:hover{
+    color: rgb(98, 0, 255);
+    cursor: pointer;
+}
+.social-icons{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+ .social-icons i{
+    font-size: 30px;
+    margin: 0 15px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+ .social-icons i:hover{
+    color: #247186
+ }
+ .top{
+    height: 60px;
+    border-radius: 10px;
+    background-color: 10px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow:0px 4px 8px rgba(0,0,0,0.1) ;
+ }
+
+ .header{
+    height: 200px;
+    border-radius: 10px;
+    background-color: #333;
+    margin: 3vh 0;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+ }
+
+ .header p{
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+ }
+
+ #raiz{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:25px;
+ }
+
+ .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+ }
+
+ .box:hover{
+    transform: translate(-10px);
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+ }
+
+ .img-box{
+    width:100%;
+    height: 176px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 15px;
+ }
+
+.images{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.bottom{
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    font-size: 24px;
+    color: #247186;
+    margin-bottom: 10px;
+}
+button{
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    background-color: #333;
+    padding: 10px 25px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.division_vestidos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_catalogo{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom:30px
 }
