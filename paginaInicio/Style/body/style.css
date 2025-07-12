@@ -368,6 +368,8 @@ button.SliBottonPrev, button.SliBottonNext {
     justify-content: center; 
     display: flex;
     margin-right: 5px;
+        cursor: pointer;
+
 }
 .ListaColor li img{
     max-width: 0.9rem;
@@ -378,6 +380,7 @@ button.SliBottonPrev, button.SliBottonNext {
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .ListaColor li img:hover{
     transform: scale(1.5);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);

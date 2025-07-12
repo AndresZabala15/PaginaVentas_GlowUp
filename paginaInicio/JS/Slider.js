@@ -25,7 +25,7 @@
 
 //Slider Producto mas vendido
 (() => {
-  const slider = document.querySelector('.ConteMasVend');
+const slider = document.querySelector('.ConteMasVend');
 const slides = document.querySelectorAll('.ProduMasVend');
 const btnPrev = document.querySelector('.BottonIzq');
 const btnNext = document.querySelector('.BottonDer');
