@@ -49,7 +49,7 @@
     justify-content: center;
     position: absolute;
     text-align: center;
-    max-width: 50%;
+    width: 50%;
 
 }
 .contenidoCentral h1{
@@ -69,21 +69,22 @@
 .contenedorInput{
     position: relative;
     display: inline-block;
-    width: 80%;
+    width: 100%;
     margin-top: 0.9375rem;
 }
 
 .contenedorInput input{
-    width: 80%;
-    padding: 4% 6% 4%;
+    width: 100%;
+    padding: 1% 2% 1% 10%;
     font-size: 1rem;
     border-radius: 0.625rem;
     border: none;
     outline: none;
+    text-align: left
 }
 .contenedorInput i {
   position: absolute;
-  right: 1.525rem;
+  right: 2%;
   top: 50%;
   transform: translateY(-50%);
   color: #888;
