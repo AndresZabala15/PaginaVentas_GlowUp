@@ -46,22 +46,3 @@ btnNext.addEventListener('click', () => showSlide(index + 1));
 // opcional: ajustar en resize
 window.addEventListener('resize', () => showSlide(index));
 })();
-
-
-
-//Funciones abrir modal contactanos
-  document.getElementById(`abrirModal`).onclick =function(e){
-    e.preventDefault();
-    document.getElementById(`pestaña_modal_contacto`).style.display = `block`;
-  }
-
-  document.getElementById(`cerrarModal`).onclick =function(){
-    document.getElementById(`pestaña_modal_contacto`).style.display = `none`;
-  }
-
-  window.onclick = function(event){
-    if(event.target == document.getElementById(`pestaña_modal_contacto`)){
-      document.getElementById(`pestaña_modal_contacto`).style.display = `none`
-    }
-  }
-
