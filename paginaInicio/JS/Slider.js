@@ -71,3 +71,9 @@ window.addEventListener('click', function(event) {
     modal.style.display = 'none';
   }
   });
+
+
+  console.log(`prueba: ${removerCeros([9, 3, 6, 4])}`) // [9, 3, 6, 4]
+
+
+  

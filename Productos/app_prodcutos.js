@@ -16,6 +16,12 @@ const productos = [
         nombre: "Vestido morado",
         precio: 70000,
         imagen:"./Vestido_morado.jpg"
+    },
+    {
+        id: 4,
+        nombre:`Vestido Amarillo`,
+        precio: 55000,
+        imagen:"./vestido_amarillo.jpg"
     }
 
 ];
@@ -53,3 +59,40 @@ function filtrarProductos(){
 }
 
 document.getElementById('barraBusqueda').addEventListener('input', filtrarProductos);
+
+//funcion para que aparezcan las opciones en la barra de busqueda cuando se escribe
+
+function filtrarSugerencias(){
+    const input = document.getElementById(`barraBusqueda`)
+    const datalist = document.getElementById(`suggestions`);
+    const texto = input.value.toLowerCase();
+    datalist.innerHTML=``;
+
+    const nombresFiltrados = productos
+    .map(p => p.nombre)
+    .filter(nombre => nombre.toLowerCase().includes(texto));
+
+    nombresFiltrados.forEach(nombre => {
+        const option = document.createElement('option');
+        option.value = nombre;
+        datalist.appendChild(option);
+    });
+
+}
+// Filtrado de productos al escribir
+function filtrarProductos(){
+    const textoBusqueda = document.getElementById('barraBusqueda').value.toLowerCase();
+    const productosFiltrados = productos.filter(producto =>
+        producto.nombre.toLowerCase().includes(textoBusqueda)
+    );
+    mostrarProductos(productosFiltrados);
+}
+
+// Eventos
+document.getElementById('barraBusqueda').addEventListener('input', () => {
+    filtrarSugerencias();
+    filtrarProductos();
+});
+
+// Mostrar todos los productos al cargar
+mostrarProductos(productos);
