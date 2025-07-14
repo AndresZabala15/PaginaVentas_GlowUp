@@ -18,10 +18,10 @@
 
 (() => {
   document.getElementById('abrirModalCompra').addEventListener('click', () => {
-      fetch('paginaInicio/Modal/ModalCom.html')
+      fetch('paginaInicio/Modal/ModalCom.html')    // Esta línea toma la información del Html 
         .then(res => res.text())
         .then(html => {
-          const contenedor = document.createElement('div');
+          const contenedor = document.createElement('div');  // crea un modal donde se aplicara la inforamción del HTML
           contenedor.innerHTML = html;
           document.body.appendChild(contenedor);
           document.getElementById('PestañaModalCompras').style.display = 'block';
