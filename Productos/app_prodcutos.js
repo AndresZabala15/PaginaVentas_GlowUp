@@ -19,7 +19,7 @@ const productos = [
     },
     {
         id: 4,
-        nombre:`Vestido Amarillo`,
+        nombre:`Vestido amarillo`,
         precio: 55000,
         imagen:"./vestido_amarillo.jpg"
     }
