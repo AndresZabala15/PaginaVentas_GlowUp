@@ -10,24 +10,32 @@ header{
 
 .cuadros_dinamicos{
     display: flex;
-    height: 500px;
+    Position: relative;
+    background-color:rgb(255, 255, 255);
+    padding: 1.875rem 1.875rem 1.875rem;	
+    flex-flow: row wrap;
+    max-width: 99%;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 55px;
+    gap: 3.4375rem;
     width: 100%;
-    padding: 20px;
+    padding: 1.25rem;
     margin: 0 auto;
+    flex-flow: row wrap;
 
 }
 
 .box{
     position: relative;
-    width: 200px;
-    height: 270px;
+    width: 11.5rem;
+    height: 16.875rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,11 +127,11 @@ a img{
 .contenido_modal input,
 .contenido_modal textarea{
     width: 80%;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+    margin-top: 0.3125rem;
+    margin-bottom: 0.625rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.0625rem  solid #ccc;
 }
 
 .contenido_modal button{
@@ -208,15 +216,10 @@ button.SliBottonPrev, button.SliBottonNext {
 }
 /*CUerpo lo mas vendido */ 
 .Cuerpo {
-    display: flex;
-    Position: relative;
-    background-color:rgb(255, 255, 255);
-    padding: 0.3125rem 1.875rem 0.3125rem;	
-    max-height: 100%;
-    flex-flow: column ;
-    max-width: 99%;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
 }
 .CuerpoInferior{
     display: flex;
@@ -247,15 +250,14 @@ button.SliBottonPrev, button.SliBottonNext {
 }
 .ConteMasVend{
     position: relative;
-    height: 100%;
-    width: 100%;
-    flex: 1 1 99%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    box-sizing: border-box;
     background-color:rgb(255, 255, 255);
-    min-height: 25rem;
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    justify-content: flex-start;
+    transition: transform 0.5s ease-in-out;
+    margin: 0.3125rem  3rem 0.3125rem 3rem;
+   
 }
 .ConteProduNue{
     position: relative;
@@ -268,76 +270,33 @@ button.SliBottonPrev, button.SliBottonNext {
     
 }
 .ProduMasNuevo{
+    position: relative;
     padding: 0.3125rem;
     flex: 1 1 1;
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
-    width: 22%;
+    width: 15.5rem;
     background-color:#ffffff;
     margin: 0.3125rem;
 }
 
-.ProMaVe1{
-    position: relative;
-    flex: 1 1 22%;
-    box-sizing: border-box;
-    margin-left: 0.3125rem;
-    /* border: solid; */
 
-}
-.ProMaVe2{
-    position: relative;
-    flex: 1 1 22%;
-    flex-basis: 22%;
-    box-sizing: border-box;
-    /* border: solid; */
-}
-.ProMaVe3{
-    position: relative;
-    flex: 1 1 22%;
-    flex-basis: 22%;
-    box-sizing: border-box;
-    /* border: solid; */
-}
-.ProMaVe4{
-    position: relative;
-    flex: 1 1 22%;
-    flex-basis: 22%;
-    box-sizing: border-box;
-    /* border: solid; */
-}
-.EsBt1{
-    position: relative;
-    flex: 1 1 6%;
-    box-sizing: border-box;
-    /* border: solid; */
-    width: 6%;
 
-}
-.EsBt2{
-    position: relative;
-    flex: 1 1 6%;
-    box-sizing: border-box;
-    /* border: solid; */
-    width: 6%;
-}
 .ProduMasVend{
-    flex: 1 1 100%;
+    position: relative;
+    flex: 0 0 calc((100% - 3rem) / 4);
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
-    /* max-width: 20rem;
-    width: 100%;
-    max-height: 32rem;  */
     width: 22%;
     background-color:#ffffff;
     margin-right: 0.3125rem;
-    /*position: static;*/   
-    /*grid-template-rows:79% 5% 5% 4% 7%;*/
-    /* border: solid; */
-    
+    padding-left:0.3125rem; 
+    box-sizing: border-box;
+
 }
+
 .img_productos {
     align-items: stretch;
     justify-content: center;
@@ -409,6 +368,8 @@ button.SliBottonPrev, button.SliBottonNext {
     justify-content: center; 
     display: flex;
     margin-right: 5px;
+        cursor: pointer;
+
 }
 .ListaColor li img{
     max-width: 0.9rem;
@@ -419,6 +380,7 @@ button.SliBottonPrev, button.SliBottonNext {
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .ListaColor li img:hover{
     transform: scale(1.5);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
@@ -465,33 +427,30 @@ button.SliBottonPrev, button.SliBottonNext {
   color: white;
 } */
 
-.EspaButto{
-    
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    background-color:#ffffff;
-    flex-flow: column wrap;
-    align-items: center;
+button.BottonIzq, button.BottonDer {
     justify-content: center;
-    height: auto;
-}
-.Botton{
-    height: 90%;
-    cursor: pointer;
-    font-size: auto;
-    font-family: Lucida;
-    color: #ffffff;
+    top: 50%;
+    align-items: center;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    color: white;
     border: none;
-    background-color: #ffffff;
-    transition: background-color 0.4s;
-    width: 100%;
+    padding: 1em;
+    cursor: pointer;
+
 }
-.Botton i{
-    width: 100%;
+
+.BottonIzq { 
+    left: 0.625rem; 
+}
+
+.BottonDer { 
+    right: 0.625rem; 
+}
+.BottonDer i,.BottonIzq i{
     color: #929593;
 }
-.Botton:hover {
+.BottonDer:hover, .BottonIzq:hover {
     background-color: #1a1a1a;
     color: #ffffff;
     border: #1a1a1a solid;
@@ -565,3 +524,5 @@ button.SliBottonPrev, button.SliBottonNext {
     
   
 }
+
+

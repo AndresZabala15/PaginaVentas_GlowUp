@@ -1,37 +1,48 @@
-const slider = document.querySelector('.SliderPromo');
-const slides = document.querySelectorAll('.SliderPromoImg');
-const prevBtn = document.querySelector('.SliBottonPrev');
-const nextBtn = document.querySelector('.SliBottonNext');
 
-let index = 0;
+//Slider principal 
 
-function showSlide(i) {
+(() => {
+  let index = 0;
+
+  function showSlide(i) {
+    const slider = document.querySelector('.SliderPromo');
+    const slides = document.querySelectorAll('.SliderPromoImg');
     index = (i + slides.length) % slides.length;
     slider.style.transform = `translateX(-${index * 100}%)`;
-}
+  }
 
-prevBtn.addEventListener('click', () => showSlide(index - 1));
-nextBtn.addEventListener('click', () => showSlide(index + 1));
+  const prevBtn = document.querySelector('.SliBottonPrev');
+  const nextBtn = document.querySelector('.SliBottonNext');
+  
+  prevBtn.addEventListener('click', () => showSlide(index - 1));
+  nextBtn.addEventListener('click', () => showSlide(index + 1));
 
   // ⏱ Auto-slide
   setInterval(() => {
     showSlide(index + 1);
-  }, 5000); // Cambia cada 5 segundos 1000 = 1 sg
+  }, 5000);
+})();
 
-  console.log(slides.length);
+//Slider Producto mas vendido
+(() => {
+const slider = document.querySelector('.ConteMasVend');
+const slides = document.querySelectorAll('.ProduMasVend');
+const btnPrev = document.querySelector('.BottonIzq');
+const btnNext = document.querySelector('.BottonDer');
 
-//Funciones abrir modal contactanos
-  document.getElementById(`abrirModal`).onclick =function(e){
-    e.preventDefault();
-    document.getElementById(`pestaña_modal_contacto`).style.display = `block`;
-  }
+let index = 0;
+const visibleCount = 4;
 
-  document.getElementById(`cerrarModal`).onclick =function(){
-    document.getElementById(`pestaña_modal_contacto`).style.display = `none`;
-  }
+function showSlide(i) {
+  const maxIndex = slides.length - visibleCount;
+  index = Math.max(0, Math.min(i, maxIndex));
+  const slideWidth = slides[0].offsetWidth;
+  slider.style.transform = `translateX(-${index * slideWidth}px)`;
+}
 
-  window.onclick = function(event){
-    if(event.target == document.getElementById(`pestaña_modal_contacto`)){
-      document.getElementById(`pestaña_modal_contacto`).style.display = `none`
-    }
-  }
+btnPrev.addEventListener('click', () => showSlide(index - 1));
+btnNext.addEventListener('click', () => showSlide(index + 1));
+
+// opcional: ajustar en resize
+window.addEventListener('resize', () => showSlide(index));
+})();
